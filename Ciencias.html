@@ -5,7 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preguntas de Ciencia</title>
     <style>
-        /* Incluye aquí tus estilos CSS */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo_ciencia.jpg'); /* Imagen de fondo para Ciencia */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 10px;
+        }
+        .questions {
+            margin-top: 20px;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .question img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            padding: 5px;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            margin-bottom: 5px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #000;
+        }
+        .question input[type="radio"] {
+            display: none;
+        }
+        .question input[type="radio"]:checked + label {
+            background: rgba(100, 100, 100, 0.8);
+        }
+        .question .feedback {
+            margin-top: 10px;
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -14,14 +71,15 @@
     </header>
     <div class="container">
         <div class="questions">
-            <div class="question" data-correct="1">
-                <h3>¿Cuál es el elemento más abundante en la atmósfera terrestre?</h3>
-                <input type="radio" id="sci1a1" name="sci1" value="0">
-                <label for="sci1a1">Oxígeno</label>
-                <input type="radio" id="sci1a2" name="sci1" value="1">
-                <label for="sci1a2">Nitrógeno</label>
-                <input type="radio" id="sci1a3" name="sci1" value="2">
-                <label for="sci1a3">Dióxido de carbono</label>
+            <div class="question" data-correct="2">
+                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de la pregunta 1">
+                <h3>¿Qué planeta es conocido como el planeta rojo?</h3>
+                <input type="radio" id="cie1a1" name="cie1" value="0">
+                <label for="cie1a1">Júpiter</label>
+                <input type="radio" id="cie1a2" name="cie1" value="1">
+                <label for="cie1a2">Saturno</label>
+                <input type="radio" id="cie1a3" name="cie1" value="2">
+                <label for="cie1a3">Marte</label>
                 <div class="feedback"></div>
             </div>
             <!-- Añade más preguntas aquí -->
