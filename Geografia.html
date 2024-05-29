@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas de Geografía</title>
+    <style>
+        /* Incluye aquí tus estilos CSS */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Preguntas de Geografía</h1>
+    </header>
+    <div class="container">
+        <div class="questions">
+            <div class="question" data-correct="1">
+                <img src="ruta/a/tu/imagen1.jpg" alt="Imagen de la pregunta 1">
+                <h3>¿Cuál es la capital de Francia?</h3>
+                <input type="radio" id="geo1a1" name="geo1" value="0">
+                <label for="geo1a1">Londres</label>
+                <input type="radio" id="geo1a2" name="geo1" value="1">
+                <label for="geo1a2">París</label>
+                <input type="radio" id="geo1a3" name="geo1" value="2">
+                <label for="geo1a3">Madrid</label>
+                <div class="feedback"></div>
+            </div>
+            <!-- Añade más preguntas aquí -->
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('change', () => {
+                const correctAnswer = question.getAttribute('data-correct');
+                const selectedAnswer = question.querySelector('input[type="radio"]:checked').value;
+                const feedback = question.querySelector('.feedback');
+                
+                if (selectedAnswer === correctAnswer) {
+                    feedback.textContent = 'Correcto';
+                    feedback.style.color = 'green';
+                } else {
+                    feedback.textContent = 'Incorrecto';
+                    feedback.style.color = 'red';
+                }
+                feedback.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

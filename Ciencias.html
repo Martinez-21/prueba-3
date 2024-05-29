@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas de Ciencia</title>
+    <style>
+        /* Incluye aquí tus estilos CSS */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Preguntas de Ciencia</h1>
+    </header>
+    <div class="container">
+        <div class="questions">
+            <div class="question" data-correct="1">
+                <h3>¿Cuál es el elemento más abundante en la atmósfera terrestre?</h3>
+                <input type="radio" id="sci1a1" name="sci1" value="0">
+                <label for="sci1a1">Oxígeno</label>
+                <input type="radio" id="sci1a2" name="sci1" value="1">
+                <label for="sci1a2">Nitrógeno</label>
+                <input type="radio" id="sci1a3" name="sci1" value="2">
+                <label for="sci1a3">Dióxido de carbono</label>
+                <div class="feedback"></div>
+            </div>
+            <!-- Añade más preguntas aquí -->
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('change', () => {
+                const correctAnswer = question.getAttribute('data-correct');
+                const selectedAnswer = question.querySelector('input[type="radio"]:checked').value;
+                const feedback = question.querySelector('.feedback');
+                
+                if (selectedAnswer === correctAnswer) {
+                    feedback.textContent = 'Correcto';
+                    feedback.style.color = 'green';
+                } else {
+                    feedback.textContent = 'Incorrecto';
+                    feedback.style.color = 'red';
+                }
+                feedback.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>

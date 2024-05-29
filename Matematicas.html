@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas de Matemáticas</title>
+    <style>
+        /* Incluye aquí tus estilos CSS */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Preguntas de Matemáticas</h1>
+    </header>
+    <div class="container">
+        <div class="questions">
+            <div class="question" data-correct="0">
+                <h3>¿Cuál es el resultado de 2+2?</h3>
+                <input type="radio" id="mat1a1" name="mat1" value="0">
+                <label for="mat1a1">4</label>
+                <input type="radio" id="mat1a2" name="mat1" value="1">
+                <label for="mat1a2">5</label>
+                <input type="radio" id="mat1a3" name="mat1" value="2">
+                <label for="mat1a3">6</label>
+                <div class="feedback"></div>
+            </div>
+            <!-- Añade más preguntas aquí -->
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.question').forEach(question => {
+            question.addEventListener('change', () => {
+                const correctAnswer = question.getAttribute('data-correct');
+                const selectedAnswer = question.querySelector('input[type="radio"]:checked').value;
+                const feedback = question.querySelector('.feedback');
+                
+                if (selectedAnswer === correctAnswer) {
+                    feedback.textContent = 'Correcto';
+                    feedback.style.color = 'green';
+                } else {
+                    feedback.textContent = 'Incorrecto';
+                    feedback.style.color = 'red';
+                }
+                feedback.style.display = 'block';
+            });
+        });
+    </script>
+</body>
+</html>
