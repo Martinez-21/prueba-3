@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('imagen de matematicas.jpg'); /* Imagen de fondo para Matemáticas */
+            background-image: url('imangen de matematicas.jpg'); /* Imagen de fondo para Matemáticas */
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -71,19 +71,37 @@
     </header>
     <div class="container">
         <div class="questions">
-            <div class="question" data-correct="0">
-                <img src="" alt=".">
-                <h3>¿Cuál es el resultado de 2+2?</h3>
+            <div class="question" data-correct="1">
+                <img src="1.jpg" alt=".">
+                <h3>En el conjunto viven los señores Gómez, Hernández, López, Pérez y Vélez. Todas las casas del conjunto
+tienen una cantidad diferente de pisos. El señor Pérez lamenta que su casa sea considerada, según la ley,
+un edificio por tener cinco pisos, aunque también se alegra de tener la casa más alta del conjunto y no
+estar “a la sombra de los demás”. ¿Cuál es el total de pisos construidos en el conjunto?</h3>
                 <input type="radio" id="mat1a1" name="mat1" value="0">
-                <label for="mat1a1">4</label>
+                <label for="mat1a1">9</label>
                 <input type="radio" id="mat1a2" name="mat1" value="1">
-                <label for="mat1a2">5</label>
+                <label for="mat1a2">15</label>
                 <input type="radio" id="mat1a3" name="mat1" value="2">
-                <label for="mat1a3">6</label>
+                <label for="mat1a3">20</label>
+                 <input type="radio" id="mat1a4" name="mat1" value="3">
+                <label for="mat1a4">25</label>
                 <div class="feedback"></div>
             </div>
-            <!-- Añade más preguntas aquí -->
-        </div>
+              <div class="questions">
+            <div class="question" data-correct="0">
+                <img src="2.jpg" alt=".">
+                <h3>¿Cuáles estudiantes hicieron correctamente el trabajo asignado?</h3>        
+                  <input type="radio" id="mat1a1" name="mat1" value="0">
+                <label for="mat1a1">I y II solamente</label>
+                <input type="radio" id="mat1a2" name="mat1" value="1">
+                <label for="mat1a2">II y III solamente</label>
+                <input type="radio" id="mat1a3" name="mat1" value="2">
+                <label for="mat1a3">I y III solamente.</label>
+                 <input type="radio" id="mat1a4" name="mat1" value="3">
+                <label for="mat1a4">I, II y III</label>
+                <div class="feedback"></div>
+            </div>
+      </div>
     </div>
     <script>
         document.querySelectorAll('.question').forEach(question => {
