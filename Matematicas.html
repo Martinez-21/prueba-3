@@ -11,7 +11,7 @@
             padding: 0;
             background-image: url('imangen de matematicas.jpg'); /* Imagen de fondo para Matemáticas */
             background-size: cover;
-            background-position: center;
+            background-position: center;.
             background-attachment: fixed;
             color: #ffffff;
         }
@@ -71,36 +71,55 @@
     </header>
     <div class="container">
         <div class="questions">
-            <div class="question" data-correct="1">
-                <img src="1.jpg" alt=".">
-                <h3>En el conjunto viven los señores Gómez, Hernández, López, Pérez y Vélez. Todas las casas del conjunto
-tienen una cantidad diferente de pisos. El señor Pérez lamenta que su casa sea considerada, según la ley,
-un edificio por tener cinco pisos, aunque también se alegra de tener la casa más alta del conjunto y no
-estar “a la sombra de los demás”. ¿Cuál es el total de pisos construidos en el conjunto?</h3>
-                <input type="radio" id="mat1a1" name="mat1" value="0">
-                <label for="mat1a1">9</label>
-                <input type="radio" id="mat1a2" name="mat1" value="1">
-                <label for="mat1a2">15</label>
-                <input type="radio" id="mat1a3" name="mat1" value="2">
-                <label for="mat1a3">20</label>
-                 <input type="radio" id="mat1a4" name="mat1" value="3">
-                <label for="mat1a4">25</label>
-                <div class="feedback"></div>
-            </div>
             <div class="question" data-correct="0">
-                <img src="2.jpg" alt=".">
-                <h3>¿Cuáles estudiantes hicieron correctamente el trabajo asignado?</h3>        
-                  <input type="radio" id="mat1a1" name="mat2" value="0">
-                <label for="mat2a1">I y II solamente</label>
-                <input type="radio" id="mat1a2" name="mat2" value="1">
-                <label for="mat2a2">II y III solamente</label>
-                <input type="radio" id="mat1a3" name="mat2" value="2">
-                <label for="mat2a3">I y III solamente.</label>
-                 <input type="radio" id="mat1a4" name="mat2" value="3">
-                <label for="mat2a4">I, II y III</label>
+                <img src="ruta/a/tu/imagen1.jpg" alt="Imagen de la pregunta 1">
+                <h3>¿Cuál es el resultado de 2+2?</h3>
+                <input type="radio" id="mat1a1" name="mat1" value="0">
+                <label for="mat1a1">4</label>
+                <input type="radio" id="mat1a2" name="mat1" value="1">
+                <label for="mat1a2">5</label>
+                <input type="radio" id="mat1a3" name="mat1" value="2">
+                <label for="mat1a3">6</label>
                 <div class="feedback"></div>
             </div>
-      </div>
+
+            <div class="question" data-correct="1">
+                <img src="ruta/a/tu/imagen2.jpg" alt="Imagen de la pregunta 2">
+                <h3>¿Cuál es el valor de π (pi) redondeado a dos decimales?</h3>
+                <input type="radio" id="mat2a1" name="mat2" value="0">
+                <label for="mat2a1">3.14</label>
+                <input type="radio" id="mat2a2" name="mat2" value="1">
+                <label for="mat2a2">3.15</label>
+                <input type="radio" id="mat2a3" name="mat2" value="2">
+                <label for="mat2a3">3.16</label>
+                <div class="feedback"></div>
+            </div>
+
+            <div class="question" data-correct="2">
+                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de la pregunta 3">
+                <h3>¿Cuántos lados tiene un hexágono?</h3>
+                <input type="radio" id="mat3a1" name="mat3" value="0">
+                <label for="mat3a1">5</label>
+                <input type="radio" id="mat3a2" name="mat3" value="1">
+                <label for="mat3a2">7</label>
+                <input type="radio" id="mat3a3" name="mat3" value="2">
+                <label for="mat3a3">6</label>
+                <div class="feedback"></div>
+            </div>
+   <div class="question" data-correct="0">
+                <img src="ruta/a/tu/imagen3.jpg" alt="Imagen de la pregunta 3">
+                <h3>sirve?</h3>
+                <input type="radio" id="mat4a1" name="mat4" value="0">
+                <label for="mat4a1">si</label>
+                <input type="radio" id="mat4a2" name="mat4" value="1">
+                <label for="mat4a2">7</label>
+                <input type="radio" id="mat4a3" name="mat4" value="2">
+                <label for="mat4a3">6</label>
+                <input type="radio" id="mat4a4" name="mat4" value="3">
+                <label for="mat4a4">no</label>
+                <div class="feedback"></div>
+            </div>
+        </div>
     </div>
     <script>
         document.querySelectorAll('.question').forEach(question => {
